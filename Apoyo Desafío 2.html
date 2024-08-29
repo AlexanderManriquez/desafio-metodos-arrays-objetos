@@ -50,12 +50,7 @@ radiologia.shift();
 radiologia.pop();
 
 //3. Imprimir lista de consultas médicas de Dental
-document.write(`<p> ${dental[0].hora} - ${dental[0].especialista} - ${dental[0].paciente} - ${dental[0].rut} - ${dental[0].prevision} </p>`);
-document.write(`<p> ${dental[1].hora} - ${dental[1].especialista} - ${dental[1].paciente} - ${dental[1].rut} - ${dental[1].prevision} </p>`);
-document.write(`<p> ${dental[2].hora} - ${dental[2].especialista} - ${dental[2].paciente} - ${dental[2].rut} - ${dental[2].prevision} </p>`);
-document.write(`<p> ${dental[3].hora} - ${dental[3].especialista} - ${dental[3].paciente} - ${dental[3].rut} - ${dental[3].prevision} </p>`);
-document.write(`<p> ${dental[4].hora} - ${dental[4].especialista} - ${dental[4].paciente} - ${dental[4].rut} - ${dental[4].prevision} </p>`);
-document.write(`<p> ${dental[5].hora} - ${dental[5].especialista} - ${dental[5].paciente} - ${dental[5].rut} - ${dental[5].prevision} </p>`);
+dental.forEach(dental => {document.write(`<p> ${dental.hora} - ${dental.especialista} - ${dental.paciente} - ${dental.rut} - ${dental.prevision} </p>`);});
 
 //4. Imprimir listado total de pacientes del centro médico
 radiologia.forEach(pacientes => { document.write(`${pacientes.paciente} <br>`);});
